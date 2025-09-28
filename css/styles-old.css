@@ -1,0 +1,243 @@
+/* font-family: "Roboto", sans-serif;
+font-family: "Raleway", sans-serif; */
+
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.page-header {
+     border-bottom: 1px solid #e7e9fc;
+     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+/* footer */
+
+
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46,47,66,0.4);
+  transition: opacity 250ms cubic-bezier(0.4,0,0.2,1), visibility 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.14), 0px 1px 3px rgba(0,0,0,0.12), 0px 2px 1px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1), border 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-close-icon {
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
+  fill: #ffffff;
+}
+
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  margin-bottom: 16px;
+}
+
+.input-container { margin-bottom: 8px; }
+.input-wrapper { position: relative; }
+.form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46,47,66,0.4);
+  border-radius: 4px;
+  padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.form-input:focus { border-color: #4D5AE5; }
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.form-input:focus + .input-icon { fill: #4D5AE5; }
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46,47,66,0.4);
+  border: 1px solid rgba(46,47,66,0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.form-textarea:focus { border-color: #4D5AE5; }
+
+/* Контейнер чекбоксу */
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
+/* Приховуємо дефолтний чекбокс */
+.checkbox-input.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Label чекбоксу */
+.checkbox-label {
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+/* Сам квадрат чекбоксу */
+span.checkbox-box {
+  display: inline-flex;   /* ✅ ключове правило */
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46,47,66,0.4);
+  border-radius: 2px;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),
+              border 250ms cubic-bezier(0.4,0,0.2,1),
+              fill 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Іконка всередині чекбоксу */
+.checkbox-icon {
+  width: 10px;
+  height: 8px;
+}
+
+/* Стан активного чекбоксу */
+.checkbox-input:checked + .checkbox-label .checkbox-box {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+/* Посилання у тексті */
+.privacy-policy {
+  color: #4d5ae5;
+}
+
+.modal-submit {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4D5AE5;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.modal-submit:hover,
+.modal-submit:focus {
+  background-color: #404bbf;
+}
+
+
+
+
+
+
+
+
