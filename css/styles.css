@@ -526,7 +526,7 @@ color: #434455;
     .advantages-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px 24px;
+        gap: 72px 24px;
     }
 
     .advantages-item {
@@ -596,8 +596,6 @@ color: #434455;
 /* TEAM */
 
 .section-team {
-    width: 320px;
-    height: 2232px;
     background-color: #f4f4fd;
     padding: 96px 0;
 }
@@ -618,8 +616,6 @@ color: #434455;
     gap: 72px;
     margin: 0 auto;
     padding: 0;
-    width: 264px;
-    height: 428px;
 }
 
 .team-item {
@@ -710,8 +706,6 @@ margin-left: 16px;
 @media screen and (min-width: 768px) {
     .section-team {
         padding: 96px 0;
-        width: 768px;
-        height: 1224px;
         background-color: #f4f4fd;;
     }
 
@@ -1100,8 +1094,7 @@ margin-left: 16px;
   
     .div-footer {
       flex-basis: 264px;        
-      text-align: left;
-      margin-top: 72px;         
+      text-align: left;     
       align-items: flex-start; 
     }
   
